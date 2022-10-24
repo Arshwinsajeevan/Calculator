@@ -10,19 +10,22 @@
 <body bgcolor="cyan">
     <div id="main">
         <div id="buttonarea"> 
-            <button id="a1">C</button> <button id="a1">%</button> <button id="a1"><</button> <button id="a1">/</button> <br>
+            <button onclick="allclear()" id="a1">C</button> <button onclick="display('%')" id="a1">%</button> <button onclick="removeElement()" id="a1">&#9003;</button> <button onclick="display('/')" id="a1">/</button> <br>
            
-            <button id="a1">7</button> <button id="a1">8</button> <button id="a1">9</button> <button id="a1">x</button> <br>
+            <button onclick="display(7)" id="a1">7</button> <button onclick="display(8)" id="a1">8</button> <button onclick="display(9)" id="a1">9</button> <button onclick="display('*')" id="a1">*</button> <br>
             
-            <button id="a1">4</button> <button id="a1">5</button> <button id="a1">6</button> <button id="a1">-</button> <br>
+            <button onclick="display(4)" id="a1">4</button> <button onclick="display(5)" id="a1">5</button> <button onclick="display(6)" id="a1">6</button> <button onclick="display('-')" id="a1">-</button> <br>
             
-            <button id="a1">1</button> <button id="a1">2</button> <button id="a1">3</button> <button id="a1">+</button> <br>
+            <button onclick="display(1)" id="a1">1</button> <button onclick="display(2)" id="a1">2</button> <button onclick="display(3)" id="a1">3</button> <button onclick="display('+')" id="a1">+</button> <br>
            
-            <button id="a1">00</button> <button id="a1">0</button> <button id="a1">.</button> <button id="a1">=</button> <br>
+            <button onclick="display(00)" id="a1">00</button> <button onclick="display(0)" id="a1">0</button> <button onclick="display('.')" id="a1">.</button> <button onclick="evaluateexp()" id="a1">=</button> <br>
            </div>
     </div>
         <input id="lab" type="text" placeholder="0">
         <label for="" ></label>
       
 </body>
+
+<!-- link external js file -->
+<script src="./calc.js"></script>
 </html>
